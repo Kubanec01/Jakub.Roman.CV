@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one:rgb(121, 186, 190);
+    --color-two:rgb(124, 172, 205);
+    --color-three:rgb(42, 96, 133);
+    --color-four:rgb(21, 199, 208);
+    --color-five:rgb(10, 64, 67);
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/background-img\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 60%;
+    max-width: 800px;
+    min-width: 375px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.37);
+}
+
+.author-box {
+    width: 100%;
+}
+
+.author-img {
+    display: flex;
+    justify-content: end;
+}
+
+.author-img img {
+    max-width: 10em;
+    max-height: auto;
+    border: 3px solid rgba(0, 0, 0, 0.614);
+    border-radius: 59% 41% 75% 25% / 38% 76% 24% 62%;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    transition: border-radius 0.2s ease-in-out;
+    position: relative;
+    right: 2.5em;
+    top: 3.125em;
+}
+
+.author-img img:hover {
+    border-radius: 64% 36% 73% 27% / 23% 71% 29% 77%   ;
+    transform: 0.4s;
+}
+
+.author-img img:active {
+    border-radius: 64% 36% 73% 27% / 23% 71% 29% 77%   ;
+    transform: 0.4s;
+}
+
+.author-name-border {
+    width: 100%;
+    height: 5.625em;
+    background: linear-gradient( 70deg,
+    var(--color-one),
+    var(--color-two)
+    );
+    opacity: 0.9;
+    position: relative;
+    top: -6.875em;
+    z-index: 1;
+}
+
+h1{
+    position: relative;
+    z-index: 3;
+    color: white;
+    font-size: 2.0625em;
+    font-weight: 600;
+    top: -1.2em;
+    left: 2em;
+}
+
+h1 , .author-info ul, .author-skills ul{
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.468);
+}
+
+.imp-info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: -2em 0 3.75em 0}
+
+.author-info {
+    background: linear-gradient(to bottom,
+    var(--color-one),
+    var(--color-two)
+    );
+    padding: 2.5em 3.125em 3.75em 1.25em;
+    border-radius: 0.625em 0.625em 1.25em 0.625em;
+    margin: 0.625em 0 0 1.5625em;
+    transition: all 0.2s ease-in-out;
+}
+
+.author-info:hover {
+    transform: scale(1.05);
+}
+
+.author-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.0625em;
+}
+
+.author-info ul i {
+    font-size: 1.25em;
+}
+
+
+
+.author-skills {
+    background: linear-gradient(to bottom,
+    var(--color-one),
+    var(--color-two)
+    );
+    padding: 1.25em 3.125em 1.1em 3.125em;
+    border-radius: 0.625em 0.625em 0.625em 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.625em 1.5625em 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.author-skills:hover {
+    transform: scale(1.05);
+}
+
+.column {
+    margin-right: 2.5em; 
+}
+
+.column:last-child {
+    margin-right: 0; 
+}
+
+.author-skills h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.0625em;
+}
+
+.author-skills ul {
+    gap: 0.625em;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.0625em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info-box{
+    margin: 5em 0 7em 0;
+    border-top: 0.25em solid var(--color-two);
+}
+
+.personal-info-box h3 {
+    padding: 2em 0 1.5em 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: var();
+    color: var(--color-three);
+}
+
+.personal-info-box p {
+    text-align: center;
+    font-size: 1em;
+    padding: 0 1.25em;
+    margin-bottom: 3.75em;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient( 70deg,
+    var(--color-one),
+    var(--color-two)
+    );
+    padding: 2.5em;
+    border-top: 8px solid rgba(0, 0, 0, 0.171);
+}
+
+.footer ul {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 2.5em;
+}
+
+.footer ul li {
+    list-style: none;
+    position: relative;
+}
+
+.footer li a i {
+    font-size: 3em;
+}
+
+.footer ul li a {
+    position: relative;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 0.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.8);
+    border: 3px solid rgb(255, 255, 255, 0.6);
+    border-right: 2px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.footer ul li a:hover {
+    transform: translateY(-1.25em);
+}
+
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.625em;
+    height: 100%;
+    background: rgb(255, 255, 255, 0.5);
+    transform: skewX(24deg) translateX(9.375em);
+    transition: 0.5s;
+}
+
+.footer ul li a:hover::before {
+    transform: skewX(45deg) translateX(-9.375em);
+}
+
+/* Media Queries */
+
+@media (hover: none) and (pointer: coarse) {
+    .footer ul li a:hover {
+        transform: none;
+    }
+
+}
+
+@media (width < 1340px) {
+
+    .author-skills {
+        padding: 1.25em 1.875em 1.1em 1.25em;
+    }
+
+    .author-info {
+        padding: 2.5em 1.5em 3.75em 1.25em;
+    }
+
+    .author-img img {
+        max-width: 9.5em;
+        max-height: auto;
+    }
+
+}
+
+@media (width < 1260px) {
+    .personal-info-box p {
+        font-size: 1.1em;
+        line-height: 180%;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (width < 1245px) {
+
+    .author-skills {
+        padding: 1.25em 0.9375em 1.1em 1.125em;
+    }
+
+    .column {
+    margin-right: 1.5em; 
+}
+
+    .author-info {
+        padding: 2.5em 0.5em 3.75em 0.625em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        top: -1.5em;
+    }
+
+    .author-img img {
+        max-width: 9.2em;
+        max-height: auto;
+    }
+
+}
+
+@media (width < 1120px) {
+
+    .author-img img {
+        max-width: 8.8em;
+        max-height: auto;
+    }
+
+    .author-name-border {
+        height: 5em;
+        top: -6em;
+    }
+
+    h1 {
+        top: -1.2em;
+    }
+
+    .author-skills {
+        padding: 0.9375em 2.5em 0.9375em 2.5em;
+        display: block;
+        text-align: center;
+        margin: 0 3.125em 0 1.5625em;
+    }
+
+    
+    .author-skills h2 {
+        font-size: 1.3em;
+        margin-bottom: 0.2em;
+    }
+
+    .author-skills ul {
+        font-size: 0.9em;
+    }
+
+
+    .column {
+        margin-right: 0; 
+        margin-bottom: 0.625em;
+    }
+
+    .author-info {
+        padding: 1.25em 0.3125em 2.5em 0.625em;
+        margin-top: 0;
+    }
+
+}
+
+@media (width < 1090px) {
+    .personal-info-box p {
+        text-align: left;
+        font-size: 1.1em;
+        letter-spacing: 200%;
+        padding: 0 2.5em;
+    }
+
+}
+
+@media (width < 1015px) {
+
+    .author-img img {
+        max-width: 8.5em;
+        max-height: auto;
+        top: 2.625em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        top: -1.7em;
+    }
+    
+    .author-name-border {
+        height: 4.7em;
+        top: -6em;
+    }
+
+    .author-info i {
+        display: none;
+    }
+
+    .personal-info-box {
+        margin: 0;
+    }
+
+}
+
+@media (width < 980px) {
+
+    .footer ul li a {
+        width: 4.2em;
+        height: 4.2em;
+    }
+
+}
+
+@media (width < 925px) {
+
+    .author-img img {
+        max-width: 8em;
+        max-height: auto;
+        top: 2.625em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        top: -1.8em;
+    }
+
+    .imp-info-sections {
+        display: block;
+    }
+
+    .author-info {
+        padding: 0.625em 0 ;
+        margin: -3.75em 0 1.875em 2.5em;
+        width: 60%;
+        border-radius: 0.625em;
+    }
+
+    .author-info ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        color: white;
+    }
+
+    .author-skills {
+        padding: 0;
+        padding-top: 0.3125em;
+        border-radius: 0.625em;
+        display: flex;
+        margin: auto;
+        margin-right: 2.5em;
+        margin-bottom: -1.25em;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .column {
+        margin-right: 2em; 
+}
+
+
+    .author-skills h2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.2em;
+        letter-spacing: 0.0625em;
+    }
+
+    .author-skills ul {
+        list-style: none;
+        font-size: 0.8em;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .personal-info-box h3 {
+        padding: 1.25em ;
+    }
+
+    .footer ul {
+        margin: 0 1em;
+    }
+
+}
+
+@media (width < 780px) {
+
+    .author-img img {
+        max-width: 7em;
+        max-height: auto;
+        top: 2em;
+    }
+
+    h1 {
+        left: 2.5em;
+    }
+
+    .personal-info-box p {
+        font-size: 1em;
+    }
+
+    .footer ul {
+        margin: 0;
+    }
+
+}
+
+@media (width < 745px) {
+
+    .author-info {
+        max-width: 60%;
+        margin: auto;
+        margin-bottom: 1.875em;
+        font-size: 0.8em;
+    }
+
+    .author-skills {
+        max-width: 60%;
+        margin: 0 auto;
+        margin-bottom: -1.875em;
+        font-size: 0.9em;
+    }
+
+    .column {
+        margin-right: 1em; 
+    }
+
+    .personal-info-box p {
+        text-align: left;
+        letter-spacing: 200%;
+        padding: 2em;
+    }
+
+    .personal-info-box h3 {
+        font-size: 1.4em;
+        padding: 0;
+        padding-top: 1.40em;
+    }
+
+    .footer ul li a {
+        width: 4em;
+        height: 4em;
+    }
+
+}
+
+@media ( width < 720px) {
+
+    .author-img img {
+        max-width: 6em;
+        max-height: auto;
+        top: 1.2em;
+    }
+
+    .author-name-border {
+        height: 3.8em;
+        top: -5.5em;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        top: -2em;
+        left: 1.5em;
+    }
+
+    .footer ul li a {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .footer li a i {
+        font-size: 2.4em;
+    }
+
+}
+
+@media (width < 650px) {
+
+    footer {
+        padding: 1.4em;    
+    }
+
+}
+
+@media (width < 620px) {
+
+    .footer ul li a {
+        width: 3.1em;
+        height: 3.1em;
+    }
+
+    .footer li a i {
+        font-size: 2em;
+    }
+
+    footer {
+        padding: 1em;    
+    }
+    
+}
+
+@media (width < 600px) {
+
+    .author-img img {
+        max-width: 5em;
+        max-height: auto;
+        top: 1.2em;
+    }
+
+    .author-name-border {
+        height: 3em;
+        top: -4.4em;
+    }
+
+    h1 {
+        font-size: 1em;
+        top: -2.25em;
+    }
+
+    .author-info {
+        font-size: 0.7em;
+    }
+
+    .author-skills {
+        font-size: 0.8em;
+        flex-wrap: nowrap;
+    }
+
+    .column {
+        margin-right: 1.2em; 
+    }
+
+    .personal-info-box p {
+        letter-spacing: 280%;
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+    .personal-info-box h3 {
+        font-size: 1.1em;
+        padding: 0;
+        padding-top: 1.40em;
+    }
+
+}
+
+@media (width > 350px) and (width < 500px) {
+    
+    .author-img img {
+        max-width: 4em;
+        max-height: auto;
+        top: 0.9em;
+        right: 0.625em;
+    }
+
+    .author-name-border {
+        height: 2em;
+        top: -3.2em;
+    }
+
+    h1 {
+        font-size: 0.8em;
+        top: -2em;
+        right: 0.625em;
+    }
+
+    .author-info {
+        margin: 1em auto 3em;
+        font-size: 0.5em;
+        padding: 1.5em 9.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author-skills {
+        padding: 1em 8.2em;
+        font-size: 0.6em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .personal-info-box h3 {
+        font-size: 1em;
+        padding: 0;
+        padding-top: 1em;
+    }
+
+    .personal-info-box p {
+        padding: 1em;
+        font-size: 0.8em;
+        margin-bottom: 1.25em;
+    }
+
+    
+    .footer ul li a {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+}
